@@ -1,0 +1,8 @@
+@charset "UTF-8"
+
+body{
+    color: rgb(31, 99, 99);
+}
+h1{color: aqua;}
+h2{color: blue;}
+p{ text-align: center;}

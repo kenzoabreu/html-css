@@ -1,0 +1,62 @@
+@charset "UTF-8" ;
+
+body {
+    background-color: greenyellow;
+}
+
+div {
+    float: right;
+   
+    
+}
+
+.principal {
+    height: 500px;
+    width: 700px;
+    border: 2px  solid black;
+    display: inline;
+    justify-content: center;
+    background-color: rgb(57, 152, 57);
+    float: right;
+    padding: 10px;
+    margin: 20px;
+    
+}
+
+.secundaria {
+    border: 2px solid black;
+    height: 250px;
+    width: 350px;
+    background-color: aquamarine;
+    display: flex;
+    float: right;
+    margin-left: 50px ;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(59, 130, 59);
+    
+}
+
+h2 {
+    text-align: center;
+    font-size: 10px;
+}
+
+.div {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+
+}
+
+.quebra {
+    text-align: left;
+    width: 250px;
+}
+
+
+

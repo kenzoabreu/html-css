@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(112, 179, 98);
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border: solid black;
+        }
+
+        nav{
+            background-color: rgb(2, 203, 25);
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 8px 3px rgba(0, 0, 0, 0.389);
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+        nav > a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: green;
+        }
+
+        main{
+            background-color: white;
+            border-radius: 20px 20px 20px 20px;
+            margin: 5px;
+            padding: 10px;
+            box-shadow: 5px 3px 1px black;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 2px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+            margin: 0px;
+        }
+
+       aside {
+        background-color: beige;
+       }
+
+       #assuntos {
+        padding: 10px;
+       }
+
+       div#bola {
+        height: 400px;
+        width: 400px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50% ;
+       }
+
+       
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quitanda Uema</h1>
+        <nav>
+            <a href="#">Pedido</a>
+            <a href="#">Sobre nós</a>
+            <a href="#">Contato</a>
+            <a href="#">Outros</a>
+            <a href="#">Avalie-nos</a>
+        </nav>
+    </header>
+
+    <main>
+            <section id="assuntos">
+            <p>esporte</p>
+
+            </section>
+            <section id="noticias">
+
+            </section>
+            <article>
+                <h2>Noticia sobre nós</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quis iste. Ex harum dignissimos repellendus id fugit saepe error, mollitia, modi ipsa pariatur eos enim, laboriosam amet debitis itaque natus!</p>
+            </article>
+    </main>
+
+    <footer>
+            <p>Desenvolvido por Eduardo Kenzo Abreu Uema</p>
+    </footer>
+
+    <div id="bola"></div>
+</body>
+</html>
