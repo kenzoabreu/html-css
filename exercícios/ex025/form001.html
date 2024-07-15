@@ -8,14 +8,32 @@
         * {
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        p:hover {
+            font-size: 15px;
+            text-shadow: 5px black;
+            color: red;
+            text-decoration: underline;
+            font-weight: bolder;
+        }
     </style>
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="">
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
+    </form>
+    <h1>Agora fazendo sozinho</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="iusuario">Usuário:</label> <input type="text" name="usuario" id="iusuario"></p>
+        <p>
+            <label for="isenha">Senha:</label> <input type="text" name="senha" id="isenha"></p>
+        <p><input type="submit" value="Cadastrar"></p>
     </form>
 </body>
 </html>
