@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script>
+    window.alert("Olá, estou usando JavaScript")
+    window.confirm("Deseja continuar")
+    </script>
+
+
+    <header>
+        <nav id="cabeçalho">
+            <h1>Explorando conhecimentos aprendidos</h1>
+            <p>Página para implementação de tags aprendidas no curso de HTML, CSS e Javascript</p>
+        </nav>
+    </header>
+
+    <div id="form">
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required>
+            </p>
+            <p>
+                <label for="idata">Data</label>
+                <input type="date" name="data" id="idata" required>
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </div>
+
+    <div id="endereco">
+        <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.762585011616!2d-48.92720109999999!3d-23.105785299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c12683ae695893%3A0x5a1a6d99992186f!2sHACKZ%20INFORM%C3%81TICA%20%26%20IMPORTADOS!5e0!3m2!1spt-BR!2sbr!4v1721655456635!5m2!1spt-BR!2sbr" width="1000" height="900" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+    <iframe src="iframe.html" frameborder="0"></iframe>
+</body>
+</html>
