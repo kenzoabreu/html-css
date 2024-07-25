@@ -38,41 +38,51 @@ nav a {
     background-image: url('imagens/fachada.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     color: white;
     text-align: center;
     padding: 50px 0;
 }
 
 .services {
-    padding: 50px 0;
-    margin-bottom: 20px;
+    background-image: url('imagens/manutenção.jpg');
+    background-size: cover; /* Manter o 'contain' para uma melhor visualização */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; /* Evitar repetição da imagem */
     color: white;
     text-align: center;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('imagens/manutenção.jpg');
+    padding: 50px 0;
+    margin-bottom: 20px;
+    min-height: 300px; /* Ajuste conforme necessário */
 }
 
-.products, .contact {
+.services, .contact {
     padding: 50px 0;
     background-color: #fff;
     margin-bottom: 20px;
 }
 
-.products h2, .contact h2 {
+.services h2, .contact h2 {
     color: #0e87be;
-    text-align: center;
+    
+}
+
+
+.services p {
+    color: white;
 }
 
 .products {
+    padding: 50px 0;
     background-color: #1d99d1;
+    margin-bottom: 20px;
     color: white;
 }
 
 .products h2 {
     color: white;
+    text-align: center;
 }
 
 .products .product-list {
@@ -165,24 +175,4 @@ footer .social a {
 
 footer .social a:hover {
     text-decoration: underline;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    .products .product-item {
-        flex: 1 1 100%;
-    }
-
-    .hero, .services, .contact, .products {
-        padding: 30px 0;
-    }
 }

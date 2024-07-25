@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quitanda Uema</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Quitanda Uema</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Bem-vindo à Quitanda Uema</h2>
+            <p>Os melhores produtos frescos e orgânicos.</p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma quitanda comprometida em oferecer produtos frescos e de alta qualidade.</p>
+        </div>
+    </section>
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="img/banana.jpg" alt="Banana">
+                    <h3>Banana</h3>
+                </div>
+                <div class="product-item">
+                    <img src="img/maça.jpg" alt="Maçã">
+                    <h3>Maçã</h3>
+                </div>
+                <div class="product-item">
+                    <img src="img/laranja.jpg" alt="Laranja">
+                    <h3>Laranja</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Quitanda Uema. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
