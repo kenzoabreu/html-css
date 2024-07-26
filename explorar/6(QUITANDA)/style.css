@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    background: #2EA322;
+    color: white;
+    padding: 10px 0;
+}
+
+.header .logo {
+    font-size: 2em;
+    margin-left: 20px;
+}
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.header .nav ul li a:hover {
+    background: #179111;
+}
+
+.hero {
+    background: url('img/1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+}
+
+.about, .products, .contact {
+    padding: 50px 0;
+}
+
+.about h2, .products h2, .contact h2 {
+    text-align: center;
+    color: #2EA322;
+    margin-bottom: 20px;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-gallery img {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact form label {
+    font-weight: bold;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 10px;
+    background: #2EA322;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact form button:hover {
+    background: #179111;
+}
+
+.footer {
+    background: #2EA322;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .social a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .social a:hover {
+    color: #179111;
+}

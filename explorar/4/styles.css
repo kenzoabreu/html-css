@@ -37,19 +37,107 @@ nav a {
 }
 
 .hero {
-    background-color: #6f8f45;
+    position: relative;
     color: white;
     text-align: center;
-    padding: 50px 0;
+    padding: 150px 0; /* Aumenta a área vertical em 50px */
+    background-image: url('img/1.jpg'); /* Caminho da imagem de fundo */
+    background-size: cover; /* Garante que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Cria o efeito parallax */
 }
 
-.about, .products, .contact {
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.about {
+    padding: 50px 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about h2 {
+    color: #3c5d13;
+    text-align: center;
+    font-size: 2.5em; /* Aumenta o tamanho do título principal */
+}
+
+.about-content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.fruit-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.fruit-images img {
+    max-width: 100px; /* Ajusta o tamanho das imagens */
+    height: auto;
+}
+
+.fruit-image.left {
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.fruit-image.right {
+    margin-left: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.about-text, .location, .product-sourcing {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-text h3, .location h3, .product-sourcing h3 {
+    background-color: #5e7e34;
+    color: white;
+    padding: 10px;
+    font-size: 1.5em; /* Tamanho da fonte para os tópicos */
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.product-sourcing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-sourcing-text {
+    width: 60%;
+    text-align: left;
+}
+
+.product-sourcing-image {
+    width: 35%;
+}
+
+.products, .contact {
     padding: 50px 0;
     background-color: #fff;
     margin-bottom: 20px;
 }
 
-.about h2, .products h2, .contact h2 {
+.products h2, .contact h2 {
     color: #3c5d13;
     text-align: center;
 }
@@ -60,55 +148,50 @@ nav a {
     flex-wrap: wrap;
 }
 
-.products .product-item {
-    flex: 1 1 30%;
-    margin: 10px;
+.product-item {
     text-align: center;
+    margin: 10px;
 }
 
-.products .product-item img {
-    max-width: 100%;
+.product-item img {
+    max-width: 150px;
     height: auto;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-form label {
-    margin-top: 10px;
+.contact label {
+    display: block;
+    margin-bottom: 10px;
 }
 
-form input, form textarea {
+.contact input, .contact textarea {
+    width: 100%;
     padding: 10px;
-    margin-top: 5px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
-form button {
-    margin-top: 20px;
-    padding: 10px;
+.contact button {
     background-color: #5e7e34;
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-form button:hover {
-    background-color: #3c5d13;
+.contact button:hover {
+    background-color: #4a6d2a;
 }
 
 footer {
     background-color: #5e7e34;
     color: white;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
-}
-
-a:hover {
-    background-color: white;
-    color: black;
 }
