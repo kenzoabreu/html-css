@@ -100,17 +100,10 @@ nav a {
     margin-left: 20px; /* Espaço entre a imagem e o texto */
 }
 
-.about-text, .location, .product-sourcing {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.about-text h3, .location h3, .product-sourcing h3 {
+.about-content h3 {
     background-color: #5e7e34;
     color: white;
     padding: 10px;
-    font-size: 1.5em; /* Tamanho da fonte para os tópicos */
     border-radius: 5px;
     text-align: center;
     margin-bottom: 20px;
@@ -127,6 +120,12 @@ nav a {
     width: 48%;
 }
 
+.product-sourcing-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
 .product-sourcing-text p {
     text-align: left;
     font-size: 1em;
@@ -134,7 +133,7 @@ nav a {
 
 .products {
     padding: 50px 0;
-    background-color: #fff;
+    background-color: #5e7e34;
     margin-bottom: 20px;
 }
 
@@ -154,11 +153,65 @@ nav a {
     width: 30%;
     text-align: center;
     margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 .product-item img {
     max-width: 100%;
     height: auto;
+}
+
+.product-overlay {
+    position: relative;
+}
+
+.product-overlay img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.product-overlay h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.product-overlay:hover img {
+    filter: brightness(50%);
+}
+
+.product-overlay:hover h3 {
+    opacity: 1;
+}
+
+.view-more-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-more-button {
+    background-color: #3c5d13;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.view-more-button:hover {
+    background-color: #5e7e34;
+    transform: scale(1.1);
 }
 
 .contact form {
@@ -210,10 +263,15 @@ footer {
     }
 
     .hero {
-        padding: 100px 0; /* Ajusta o padding vertical */
+        padding: 100px 0;
     }
 
     .product-item {
-        width: 100%;
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .product-list {
+        justify-content: space-around;
     }
 }
