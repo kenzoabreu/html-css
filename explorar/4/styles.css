@@ -112,86 +112,108 @@ nav a {
     padding: 10px;
     font-size: 1.5em; /* Tamanho da fonte para os tópicos */
     border-radius: 5px;
-    margin: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .product-sourcing {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 }
 
-.product-sourcing-text {
-    width: 60%;
+.product-sourcing-text, .product-sourcing-image {
+    width: 48%;
+}
+
+.product-sourcing-text p {
     text-align: left;
+    font-size: 1em;
 }
 
-.product-sourcing-image {
-    width: 35%;
-}
-
-.products, .contact {
+.products {
     padding: 50px 0;
     background-color: #fff;
     margin-bottom: 20px;
 }
 
-.products h2, .contact h2 {
+.products h2 {
     color: #3c5d13;
     text-align: center;
+    font-size: 2em;
 }
 
-.products .product-list {
+.product-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .product-item {
+    width: 30%;
     text-align: center;
-    margin: 10px;
+    margin-bottom: 20px;
 }
 
 .product-item img {
-    max-width: 150px;
+    max-width: 100%;
     height: auto;
 }
 
 .contact form {
-    max-width: 600px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .contact label {
-    display: block;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .contact input, .contact textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin-top: 5px;
 }
 
 .contact button {
+    margin-top: 20px;
+    padding: 10px 20px;
     background-color: #5e7e34;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
     cursor: pointer;
-}
-
-.contact button:hover {
-    background-color: #4a6d2a;
+    font-size: 1em;
 }
 
 footer {
     background-color: #5e7e34;
     color: white;
-    padding: 20px 0;
     text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    .product-sourcing {
+        flex-direction: column;
+    }
+
+    .product-sourcing-text, .product-sourcing-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-sourcing-image {
+        margin-top: 20px;
+    }
+
+    .hero {
+        padding: 100px 0; /* Ajusta o padding vertical */
+    }
+
+    .product-item {
+        width: 100%;
+    }
 }
