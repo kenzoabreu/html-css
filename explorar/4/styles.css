@@ -245,6 +245,31 @@ nav a {
     font-weight: bold;
 }
 
+.contact-info p span {
+    background-color: #5e7e34;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.contact-info .address,
+.contact-info .phone,
+.contact-info .instagram,
+.contact-info .facebook {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.contact-info .phone, 
+.contact-info .instagram, 
+.contact-info .facebook {
+    justify-content: center;
+}
+
 .contact h3 {
     text-align: center;
     color: #3c5d13;
@@ -315,4 +340,8 @@ footer {
     .product-list {
         justify-content: space-around;
     }
+}
+
+h2.nossosprodutos {
+    font-size: 2em;
 }
