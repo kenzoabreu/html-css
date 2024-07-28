@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -163,6 +165,8 @@ nav a {
 
 .product-overlay {
     position: relative;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .product-overlay img {
@@ -209,8 +213,43 @@ nav a {
 }
 
 .view-more-button:hover {
-    background-color: #5e7e34;
+    background-color: #7fa055;
     transform: scale(1.1);
+}
+
+.contact {
+    padding: 50px 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact h2 {
+    color: #3c5d13;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.contact-info a {
+    color: #3c5d13;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact h3 {
+    text-align: center;
+    color: #3c5d13;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .contact form {
