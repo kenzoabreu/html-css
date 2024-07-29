@@ -34,6 +34,14 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #3c5d13; /* Nova cor da letra */
+    background-color: #fff; /* Nova cor do background */
+    font-size: 1.2em; /* Aumentando o tamanho da letra */
+    padding: 5px;
 }
 
 .hero {
