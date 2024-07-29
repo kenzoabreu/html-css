@@ -354,3 +354,66 @@ footer {
 h2.nossosprodutos {
     font-size: 2em;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Efeito zebrado */
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para o cabeçalho */
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilo do contêiner */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos de header e footer mantidos */
+header, footer {
+    background-color: #5e7e34;
+    color: white;
+    padding: 10px 0;
+}
+
+header h1, footer p {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
