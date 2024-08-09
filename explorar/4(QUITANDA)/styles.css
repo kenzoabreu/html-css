@@ -261,12 +261,13 @@ nav a:hover {
     margin-right: 10px;
 }
 
+
 .contact-info .address,
-.contact-info .phone,
-.contact-info .instagram,
+.contact-info .phone, 
+.contact-info .instagram, 
 .contact-info .facebook {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center; /* Corrige a centralização */
     align-items: center;
     padding: 5px 0;
     text-align: left;
