@@ -8,7 +8,7 @@
         div.container {
             background-color: bisque;
             display: flex;
-            justify-content: center
+            
         }
 
         div.item{
@@ -16,16 +16,32 @@
             border: 1px solid black;
             text-align: center;
             padding: 10px;
-            flex-basis: 250px;
+            flex-basis: 200px;
+
         }
+
+        div#cx1{
+            flex-shrink:0 ;
+            flex-grow: 1;
+        }
+
+        div#cx2{
+            flex-shrink:1 ;
+            flex-grow:2 ;
+        }
+
+        div#cx3{
+            flex-shrink:2;
+            flex-grow: 5;
+        }
+        
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">Conteúdo pequeno</div>
-        <div class="item">Conteúdo que será um pouco</div>
-        <div class="item">Conteúdo  que será bem maior</div>
-        <div class="item">Outro</div>
+        <div class="item" id="cx1">A</div>
+        <div class="item" id="cx2">B</div>
+        <div class="item" id="cx3">C</div>
       
 </body>
 </html>
